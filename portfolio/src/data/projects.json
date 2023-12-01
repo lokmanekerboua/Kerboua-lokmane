@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Net",
+    "imageSrc": "projects/net1.png",
+    "description": "Simplify the way you manage your company's devices.",
+    "skills": ["Kotlin", "Jetpack","Node","Maps SDK","Express", "postgresql","MVVM"],
+    "source": "https://github.com/lokmanekerboua/Net"
+  },
+  {
+    "title": "Lokmane TV",
+    "imageSrc": "projects/lokTv.png",
+    "description": "Watch your favorite TV channels anytime, anywhere, with a simple tap.",
+    "skills": ["Kotlin","Retrofit", "Node", "Jetpack","Express","Exoplayer", "MVVM"],
+    "source": "https://github.com/lokmanekerboua/lokTV"
+  },
+  {
+    "title": "REST API",
+    "imageSrc": "projects/project.png",
+    "description": "This is a full rest api made using MVC with nodejs, expressjs and mongodb",
+    "skills": ["React", "Express", "Node","JWT","Cloudinary","MongoDB","MVC"],
+    "source": "https://github.com/lokmanekerboua/RestApi"
+  }
+]

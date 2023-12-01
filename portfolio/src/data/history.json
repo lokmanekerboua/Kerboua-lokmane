@@ -1,0 +1,22 @@
+[
+  {
+    "role": "Android Studio",
+    "organisation": "Google",
+    "experiences": ["Integrated development environment (IDE)", "Specifically designed for Android app development"],
+    "imageSrc": "history/android_studio.png"
+  },
+  {
+    "role": "Jetpack Compose",
+    "organisation": "Google",
+    "experiences": ["Modern toolkit from Google for building native Android UIs"],
+    "imageSrc": "skills/compose.png"
+  },
+  {
+    "role": "Ktor",
+    "organisation": "Google",
+    "experiences": [
+      "Used for building asynchronous server-side and client-side applications in Kotlin"
+    ],
+    "imageSrc": "skills/ktor.png"
+  }
+]

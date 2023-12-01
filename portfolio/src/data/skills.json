@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Kotlin",
+    "imageSrc": "skills/kotlin.png"
+  },
+  {
+    "title": "Compose",
+    "imageSrc": "skills/compose.png"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/Postgresql.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Ktor",
+    "imageSrc": "skills/ktor.png"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  }
+]
