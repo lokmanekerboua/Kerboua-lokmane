@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm LOKMANE</h1>
         <p className={styles.description}>
-          I'm a Android developer with 2 years of experience using Kotlin and
+          I'm an Android developer with 2 years of experience using Kotlin and
           Jetpack compose. Reach out if you'd like to learn more!
         </p>
         <a href="mailto:lokmankerboua@gmail.com" className={styles.contactBtn}>
