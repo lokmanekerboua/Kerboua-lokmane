@@ -17,7 +17,7 @@
     "title": "REST API",
     "imageSrc": "projects/project.png",
     "description": "This is a full rest api made using MVC with nodejs, expressjs and mongodb",
-    "skills": ["React", "Express", "Node","JWT","Cloudinary","MongoDB","MVC"],
+    "skills": ["Express", "Node","JWT","Cloudinary","MongoDB","MVC"],
     "source": "https://github.com/lokmanekerboua/RestApi"
   }
 ]
