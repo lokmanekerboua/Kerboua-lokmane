@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Cv.module.css";
 
 export const Cv = () => {
-    const cvLink = "https://drive.google.com/file/d/1q9cQttwfghXVIGwMXKZeOtZUNWPsitaW/view?usp=drive_link";
+    const cvLink = "https://drive.google.com/file/d/1uGBQu9IRsXPKGbL-HmQdJfSOB2Lgtp0_/view?usp=drive_link";
     return (
         <section className={styles.container}>
             <div className={styles.content}>
