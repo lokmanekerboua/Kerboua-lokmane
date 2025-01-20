@@ -19,7 +19,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Android Developer</h3>
               <p>
-                I'm a android developer with experience in building high-quality android apps using KOTLIN.
+                I am an android developer with experience in building high-quality android apps using KOTLIN.
               </p>
             </div>
           </li>
