@@ -5,9 +5,18 @@
   --color-button: #3bc639;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
-  --color-bg: #04152d;
+
+  /*----------MyTheme---------------*/
+  --color-bg-dark: #090909;
+  --color-bg-light: #f1f1f1;
+  --color-text-light: #000000;
+  --color-text-dark: #fff;
+  --color-button-light: #000000;
+  --color-button-dark: #ffffff;
 
   /* Fonts */
-  --font-roboto: "Space Mono";
+  --font-roboto: "Roboto";
   --font-Montserrat: "Montserrat";
+  --font-Space-Mono: "Space Mono";
+  --current-font: var(--font-Space-Mono);
 }
