@@ -2,20 +2,21 @@ import React from "react";
 
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
+import { IoLogoAndroid } from "react-icons/io";
+import { FaServer } from "react-icons/fa6";
+import { SiJetpackcompose } from "react-icons/si";
+
+
+
 
 export const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
-        <img
-          src={getImageUrl("about/aboutImage.png")}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-        />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
+            <img className={styles.aboutImage} src={getImageUrl("about/android.png")} />
             <div className={styles.aboutItemText}>
               <h3>Android Developer</h3>
               <p>
@@ -24,7 +25,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
+            <img className={styles.aboutImage} src={getImageUrl("about/node.png")}/>
             <div className={styles.aboutItemText}>
               <h3>Backend</h3>
               <p>
@@ -33,7 +34,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
+            <img className={styles.aboutImage} src={getImageUrl("about/compose.png")}/>
             <div className={styles.aboutItemText}>
               <h3>UI</h3>
               <p>

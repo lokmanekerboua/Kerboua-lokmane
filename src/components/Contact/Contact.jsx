@@ -1,32 +1,61 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+import {HiOutlineMail} from "react-icons/hi";
+import {TbBrandLinkedin} from "react-icons/tb";
+import {FaGithub} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
+import {useTheme} from "../../ThemeContext.jsx";
+
+
 
 export const Contact = () => {
-  return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
-      </div>
-      <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:lokmankerboua@gmail.com" target={"_blank"}>lokmankerboua@gmail.com</a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/lokmanekerboua/" target={"_blank"}>lokmanekerboua</a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/lokmanekerboua" target={"_blank"}>lokmanekerboua</a>
-        </li>
-      </ul>
-    </footer>
-  );
+    const { isDark, toggleTheme } = useTheme();
+    return (
+        <footer id="contact" className={styles.container}>
+            <div className={styles.text}>
+                <h2>Contact</h2>
+                <p>Feel free to reach out!</p>
+                <button className={styles.themeButton} onClick={toggleTheme}>
+                    Switch to {isDark ? "Light" : "Dark"} Theme
+                </button>
+            </div>
+            <ul className={styles.links}>
+
+                <li className={styles.link}>
+                    <HiOutlineMail size={40}/>
+                    <a href="mailto:lokmankerboua@gmail.com" target={"_blank"}>lokmankerboua@gmail.com</a>
+                </li>
+                <li className={styles.link}>
+                    <TbBrandLinkedin size={40}/>
+                    <a href="https://www.linkedin.com/in/lokmanekerboua/" target={"_blank"}>lokmane kerboua</a>
+                </li>
+                <li className={styles.link}>
+                    <FaGithub size={40}/>
+                    <a href="https://github.com/lokmanekerboua" target={"_blank"}>lokmanekerboua</a>
+                </li>
+            </ul>
+            <ul className={styles.links}>
+
+                <li className={styles.link}>
+                    <FaXTwitter size={40}/>
+                    <a href="https://x.com/lokmane_kerboua" target={"_blank"}>lokmane kerboua</a>
+                </li>
+                <li className={styles.link}>
+                    <FaStackOverflow size={40}/>
+                    <a href="https://stackoverflow.com/users/18175563/lokmane-kerboua" target={"_blank"}>lokmane
+                        kerboua</a>
+                </li>
+                <li className={styles.link}>
+                    <FaFacebookSquare size={40}/>
+                    <a href="https://www.facebook.com/lokmvne/" target={"_blank"}>lokmane kerboua</a>
+                </li>
+            </ul>
+
+            <div className={styles.topBlur}/>
+            <div className={styles.bottomBlur}/>
+        </footer>
+    );
 };

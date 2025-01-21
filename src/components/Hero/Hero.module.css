@@ -23,7 +23,7 @@
   font-size: 4rem;
   font-weight: 900;
   margin-bottom: 33px;
-  font-family: var(--font-roboto);
+  font-family: var(--current-font);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 70%,
@@ -35,16 +35,17 @@
 
 .description {
   font-size: 1.5rem;
-  font-family: var(--font-roboto);
+  font-family: var(--current-font);
   margin-bottom: 52px;
 }
 
 .contactBtn {
   text-decoration: none;
-  background-color: var(--color-button);
-  color: var(--color-text);
+  background-color: var(--color-button-dark);
+  color: var(--color-text-light);
+  font-family: var(--current-font);
   border-radius: 100px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -77,11 +78,10 @@
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 350px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(86, 9, 107, 0.7);
+  background: rgba(94, 94, 94, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
@@ -95,7 +95,7 @@
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(16, 112, 25, 0.7);
+  background: rgba(51, 51, 51, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
@@ -124,7 +124,7 @@
     font-weight: 900;
     margin-top: 33px;
     margin-bottom: 33px;
-    font-family: var(--font-roboto);
+    font-family: var(--current-font);
     background: linear-gradient(
             90deg,
             rgba(255, 255, 255, 1) 70%,

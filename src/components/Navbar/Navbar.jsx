@@ -1,27 +1,32 @@
 import React, {useState} from "react";
 
 import styles from "./Navbar.module.css";
-import {getImageUrl} from "../../utils";
+import {IoCloseSharp} from "react-icons/io5";
+import {HiOutlineMenu} from "react-icons/hi";
+
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <nav className={styles.navbar}>
-            <a className={styles.title} href="/">
+            <a className={styles.titleDark} href="/">
                 K.LOKMANE
             </a>
             <div className={styles.menu}>
-                <img
+                <button
                     className={styles.menuBtn}
-                    src={
-                        menuOpen
-                            ? getImageUrl("nav/closeIcon.png")
-                            : getImageUrl("nav/menuIcon.png")
-                    }
                     alt="menu-button"
                     onClick={() => setMenuOpen(!menuOpen)}
-                />
+                >
+                    {
+                        menuOpen ? (
+                            <IoCloseSharp size={30} color="#fff"/>
+                        ) : (
+                            <HiOutlineMenu size={30} color="#fff"/>
+                        )
+                    }
+                </button>
                 <ul
                     className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => setMenuOpen(false)}
