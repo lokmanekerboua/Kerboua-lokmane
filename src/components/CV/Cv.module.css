@@ -25,12 +25,29 @@
     justify-content: center;
     border-radius: 100px;
     align-items: center;
+    background: var(--color-bg-dark);
+    width: 300px;
+    height: 60px;
+}
+
+.btnContainerDark{
+    display: flex;
     justify-content: center;
+    border-radius: 100px;
+    align-items: center;
     background: var(--color-bg-light);
     width: 300px;
     height: 60px;
 }
+
 .contactBtn {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contactBtnDark {
     text-decoration: none;
     color: var(--color-text-light);
     font-size: 2rem;

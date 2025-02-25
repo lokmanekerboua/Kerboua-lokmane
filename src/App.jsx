@@ -6,11 +6,13 @@ import {Hero} from "./components/Hero/Hero";
 import {Navbar} from "./components/Navbar/Navbar";
 import {Projects} from "./components/Projects/Projects";
 import {Cv} from "./components/CV/cv";
+import {useTheme} from "./ThemeContext.jsx";
 
 
 function App() {
+    const {isDark, toggleTheme} = useTheme();
     return (
-        <div className={styles.App}>
+        <div className={isDark ? styles.AppDark : styles.AppLight}>
             <Navbar/>
             <Hero/>
             <About/>
