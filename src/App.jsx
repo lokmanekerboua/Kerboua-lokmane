@@ -7,6 +7,7 @@ import {Navbar} from "./components/Navbar/Navbar";
 import {Projects} from "./components/Projects/Projects";
 import {Cv} from "./components/CV/cv";
 import {useTheme} from "./ThemeContext.jsx";
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Projects/>
             <Cv/>
             <Contact/>
+            <Analytics/>
         </div>
     );
 }
