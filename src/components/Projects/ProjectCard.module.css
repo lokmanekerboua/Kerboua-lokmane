@@ -5,6 +5,16 @@
   flex-direction: column;
 
   border-radius: 10px;
+  background-color: var(--color-bg-dark);
+  max-width: 360px;
+  height: 600px;
+}
+
+.containerDark {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
   background-color: var(--color-bg-light);
   max-width: 360px;
   height: 600px;
@@ -31,11 +41,26 @@
 .title {
   font-size: 1.5rem;
   font-family: var(--current-font);
+  color: var(--color-text-dark);
+  font-weight: bold;
+}
+
+.titleDark{
+  font-size: 1.5rem;
+  font-family: var(--current-font);
   color: var(--color-text-light);
   font-weight: bold;
 }
 
 .description {
+  margin-top: 6px;
+  font-size: 1.2rem;
+  font-family: var(--current-font);
+  color: var(--color-text-dark);
+  font-weight: 100;
+}
+
+.descriptionDark {
   margin-top: 6px;
   font-size: 1.2rem;
   font-family: var(--current-font);
@@ -57,6 +82,19 @@
 .skill {
   display: flex;
   font-size: 1rem;
+  background: var(--color-bg-light);
+  font-family: var(--current-font);
+  width:100px;
+  height: 30px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.skillDark {
+  display: flex;
+  font-size: 1rem;
   background: var(--color-bg-dark);
   font-family: var(--current-font);
   width:100px;
@@ -70,6 +108,16 @@
 .links {
   width: 70%;
   height: 40px;
+  background: var(--color-bg-light);
+  display: flex;
+  margin: 10px;
+  align-self: center;
+  border-radius: 100px;
+}
+
+.linksDark {
+  width: 70%;
+  height: 40px;
   background: var(--color-bg-dark);
   display: flex;
   margin: 10px;
@@ -79,7 +127,17 @@
 
 .link {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text-light);
+  font-family: var(--current-font);
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.linkDark {
+  text-decoration: none;
+  color: var(--color-text-dark);
   font-family: var(--current-font);
   font-size: 1.5rem;
   height: 100%;

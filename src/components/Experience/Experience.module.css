@@ -1,14 +1,29 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
+  color: var(--color-text-light);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.containerDark {
+  color: var(--color-text-dark);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  color: var(--color-text);
+  color: var(--color-text-light);
+  font-family: var(--current-font);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.titleDark {
+  color: var(--color-text-dark);
   font-family: var(--current-font);
   font-size: 35px;
   font-weight: 700;
@@ -38,6 +53,15 @@
 }
 
 .skillImageContainer {
+  background-color: var(--color-bg-dark);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+.skillImageContainerDark {
   background-color: var(--color-bg-light);
   border-radius: 100%;
   display: flex;
@@ -48,6 +72,10 @@
 }
 
 .skillImageContainer img {
+  width: 75px;
+}
+
+.skillImageContainerDark img {
   width: 75px;
 }
 
@@ -108,7 +136,13 @@
     gap: 34px;
   }
   .container {
-    color: var(--color-text);
+    color: var(--color-text-light);
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .containerDark{
+    color: var(--color-text-dark);
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;

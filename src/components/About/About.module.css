@@ -2,6 +2,17 @@
 
 .container {
     position: relative;
+    background-color: var(--color-bg-dark);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.containerDark {
+    position: relative;
     background-color: var(--color-bg-light);
     border-radius: 15px;
     padding: 30px;
@@ -12,6 +23,15 @@
 }
 
 .title {
+    color: var(--color-text-dark);
+    font-family: var(--current-font);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.titleDark {
     color: var(--color-text-light);
     font-family: var(--current-font);
     font-size: 35px;
@@ -40,6 +60,15 @@
 }
 
 .aboutItems {
+    color: var(--color-text-dark);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+}
+
+.aboutItemsDark {
     color: var(--color-text-light);
     display: flex;
     flex-direction: column;
@@ -83,6 +112,13 @@
 
 @media screen and (max-width: 830px) {
     .container {
+        background-color: var(--color-bg-dark);
+        margin-top: 20px;
+        padding-left: 25px;
+        padding-right: 0;
+    }
+
+    .containerDark {
         background-color: var(--color-bg-light);
         margin-top: 20px;
         padding-left: 25px;

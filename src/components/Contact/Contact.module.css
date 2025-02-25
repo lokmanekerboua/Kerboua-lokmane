@@ -1,7 +1,18 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
+  color: var(--color-text-light);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 30px 5%;
+  gap: 10px;
+}
+
+.containerDark {
+  color: var(--color-text-dark);
   margin-top: 80px;
   display: flex;
   flex-direction: row;
@@ -14,7 +25,17 @@
 .themeButton{
   background-color: transparent;
   border: none;
-  color: var(--color-text);
+  color: var(--color-text-light);
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: var(--font-Space-Mono);
+}
+
+.themeButtonDark{
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-dark);
   font-size: 30px;
   margin-top: 20px;
   font-weight: 300;
@@ -49,8 +70,23 @@
   gap: 25px;
 }
 
+.linkDark {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 .link a {
-  color: var(--color-text);
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: var(--font-Space-Mono);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.linkDark a {
+  color: var(--color-text-dark);
   text-decoration: none;
   font-size: 1rem;
   font-family: var(--font-Space-Mono);
@@ -59,8 +95,14 @@
 }
 
 
+
+
 @media screen and (max-width: 830px) {
   .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+  .containerDark {
     flex-direction: column;
     gap: 23px;
   }

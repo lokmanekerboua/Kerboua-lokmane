@@ -2,7 +2,14 @@
 
 .container {
   margin-top: 76px;
-  color: var(--color-text);
+  color: var(--color-text-light);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.containerDark {
+  margin-top: 76px;
+  color: var(--color-text-dark);
   margin-left: 10%;
   margin-right: 10%;
 }
