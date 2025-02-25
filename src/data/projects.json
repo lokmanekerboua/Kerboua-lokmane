@@ -14,6 +14,20 @@
     "source": "https://github.com/lokmanekerboua/lokTV"
   },
   {
+    "title": "TODO",
+    "imageSrc": "projects/todo.png",
+    "description": "A modern To-Do app developed with Kotlin and Jetpack Compose, designed to help users efficiently manage their tasks and deadlines.",
+    "skills": ["KOTLIN","RETROFIT", "FIREBASE", "Jetpack","ALARMS", "MVVM"],
+    "source": "https://github.com/lokmanekerboua/TODO"
+  },
+  {
+    "title": "PDF Toolkit",
+    "imageSrc": "projects/pdfapp.png",
+    "description": "An all-in-one PDF toolkit designed to simplify document management.",
+    "skills": ["KOTLIN","RETROFIT", "FIREBASE", "Jetpack","SERVICES", "MVVM"],
+    "source": "https://github.com/lokmanekerboua/EasyPdf"
+  },
+  {
     "title": "REST API",
     "imageSrc": "projects/project.png",
     "description": "This is a full rest api made using MVC with nodejs, expressjs and mongodb",
