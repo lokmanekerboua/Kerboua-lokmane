@@ -25,11 +25,11 @@ export const ProjectCard = ({project: {title, imageSrc, description, skills, dem
                         );
                     })}
                 </ul>
-                <div className={isDark ? styles.linksDark : styles.links}>
-                    <a href={source} className={isDark ? styles.linkDark : styles.link} target={"_blank"}>
-                        source
-                    </a>
-                </div>
+            </div>
+            <div className={isDark ? styles.linksDark : styles.links}>
+                <a href={source} className={isDark ? styles.linkDark : styles.link} target={"_blank"}>
+                    source
+                </a>
             </div>
         </div>
     );

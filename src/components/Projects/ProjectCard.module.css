@@ -1,146 +1,142 @@
 @import "../../vars.css";
 
+.container, .containerDark {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 360px;
+    height: 550px;
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 10px;
-  background-color: var(--color-bg-dark);
-  max-width: 360px;
-  height: 600px;
+    background-color: var(--color-bg-dark);
 }
-
 .containerDark {
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 10px;
-  background-color: var(--color-bg-light);
-  max-width: 360px;
-  height: 600px;
+    background-color: var(--color-bg-light);
 }
 
-.infoContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 380px;
-  border-radius: 10px;
-  font-family: var(--current-font);
-  background-color: transparent;
-  max-width: 345px;
-  margin: 20px;
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+    border-radius: 10px;
+    font-family: var(--current-font);
+    background-color: transparent;
+    width: 320px;
+    margin: 20px;
 }
 
 .image {
-  border-radius: 10px 10px 0 0;
-  height: 220px;
-  margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    height: 190px;
+    margin-bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.title, .titleDark {
+    font-size: 1.5rem;
+    font-family: var(--current-font);
+    font-weight: bold;
 }
 
 .title {
-  font-size: 1.5rem;
-  font-family: var(--current-font);
-  color: var(--color-text-dark);
-  font-weight: bold;
+    color: var(--color-text-dark);
 }
 
-.titleDark{
-  font-size: 1.5rem;
-  font-family: var(--current-font);
-  color: var(--color-text-light);
-  font-weight: bold;
+.titleDark {
+    color: var(--color-text-light);
+}
+
+.description, .descriptionDark {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 6px;
+    font-size: 1.2rem;
+    font-family: var(--current-font);
+    font-weight: 100;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 1.2rem;
-  font-family: var(--current-font);
-  color: var(--color-text-dark);
-  font-weight: 100;
+    color: var(--color-text-dark);
 }
 
 .descriptionDark {
-  margin-top: 6px;
-  font-size: 1.2rem;
-  font-family: var(--current-font);
-  color: var(--color-text-light);
-  font-weight: 100;
+    color: var(--color-text-light);
 }
 
 .skills {
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-weight: 300;
-  gap: 6px;
-  list-style: none;
+    width: 100%;
+    margin-top: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 300;
+    gap: 6px;
+    list-style: none;
 }
 
-.skill {
-  display: flex;
-  font-size: 1rem;
-  background: var(--color-bg-light);
-  font-family: var(--current-font);
-  width:100px;
-  height: 30px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border-radius: 100px;
+.skill, .skillDark {
+    display: flex;
+    font-size: 0.9rem;
+    font-family: var(--current-font);
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.skill{
+    background: var(--color-bg-light);
 }
 
 .skillDark {
-  display: flex;
-  font-size: 1rem;
-  background: var(--color-bg-dark);
-  font-family: var(--current-font);
-  width:100px;
-  height: 30px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border-radius: 100px;
+    background: var(--color-bg-dark);
 }
 
-.links {
-  width: 70%;
-  height: 40px;
-  background: var(--color-bg-light);
-  display: flex;
-  margin: 10px;
-  align-self: center;
-  border-radius: 100px;
+.links, .linksDark {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    align-self: center;
+    border-radius: 100px;
 }
-
+.links{
+    background: var(--color-bg-light);
+}
 .linksDark {
-  width: 70%;
-  height: 40px;
-  background: var(--color-bg-dark);
-  display: flex;
-  margin: 10px;
-  align-self: center;
-  border-radius: 100px;
+    background: var(--color-bg-dark);
+}
+
+.link, .linkDark {
+    text-decoration: none;
+    font-family: var(--current-font);
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .link {
-  text-decoration: none;
-  color: var(--color-text-light);
-  font-family: var(--current-font);
-  font-size: 1.5rem;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    color: var(--color-text-light);
 }
 
 .linkDark {
-  text-decoration: none;
-  color: var(--color-text-dark);
-  font-family: var(--current-font);
-  font-size: 1.5rem;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+    color: var(--color-text-dark);
+}
+
+
+@media screen and (max-width: 830px) {
+
 }

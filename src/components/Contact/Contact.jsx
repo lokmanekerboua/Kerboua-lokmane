@@ -6,6 +6,8 @@ import {TbBrandLinkedin} from "react-icons/tb";
 import {FaFacebookSquare, FaGithub, FaStackOverflow} from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 import {useTheme} from "../../ThemeContext.jsx";
+import { MdLightMode } from "react-icons/md";
+import { MdNightlight } from "react-icons/md";
 
 
 export const Contact = () => {
@@ -16,7 +18,8 @@ export const Contact = () => {
                 <h2>Contact</h2>
                 <p>Feel free to reach out!</p>
                 <button className={isDark?styles.themeButtonDark:styles.themeButton} onClick={toggleTheme}>
-                    Switch to {isDark ? "Light" : "Dark"} Theme
+                    <p>Theme</p>
+                    {isDark ? <MdNightlight className = {styles.icon}/> : <MdLightMode className = {styles.icon}/>}
                 </button>
             </div>
             <ul className={styles.links}>

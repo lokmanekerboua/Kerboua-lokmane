@@ -34,7 +34,7 @@
 .titleDark {
     color: var(--color-text-light);
     font-family: var(--current-font);
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
@@ -49,14 +49,8 @@
 }
 
 .aboutImage {
-    width: 100px;
-    margin: 20px;
-}
-
-.icons {
-    margin: 15px;
-    height: 60px;
     width: 60px;
+    margin: 10px;
 }
 
 .aboutItems {
@@ -110,19 +104,27 @@
     font-family: var(--current-font);
 }
 
+
+
+
+
+
 @media screen and (max-width: 830px) {
     .container {
         background-color: var(--color-bg-dark);
         margin-top: 20px;
-        padding-left: 25px;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 1;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .containerDark {
         background-color: var(--color-bg-light);
         margin-top: 20px;
-        padding-left: 25px;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .content {
@@ -131,10 +133,40 @@
 
     .aboutItems {
         margin-top: 29px;
+        gap: 10px;
+    }
+
+
+    .aboutItemsDark {
+        margin-top: 29px;
+        gap: 10px;
     }
 
     .aboutItem {
-        padding-left: 25px;
-        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        list-style: none;
+        padding: 25px;
+        background-image: linear-gradient(
+                180deg,
+                rgba(133, 133, 133, 0.42) 0%,
+                rgba(255, 255, 255, 0) 100%
+        );
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition: 0.4s;
+    }
+
+    .aboutItem h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: var(--current-font);
+    }
+
+    .aboutItem p {
+        font-size: 0.8rem;
+        font-family: var(--current-font);
     }
 }
