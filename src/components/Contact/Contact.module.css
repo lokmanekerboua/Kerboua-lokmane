@@ -1,7 +1,6 @@
 @import "../../vars.css";
 
-.container {
-  color: var(--color-text-light);
+.container, .containerDark {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
@@ -10,37 +9,36 @@
   padding: 30px 5%;
   gap: 10px;
 }
-
+.container{
+  color: var(--color-text-light);
+}
 .containerDark {
   color: var(--color-text-dark);
-  margin-top: 80px;
+}
+
+.themeButton, .themeButtonDark{
+  background-color: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 30px 5%;
-  gap: 10px;
+  align-items: center;
+  border: none;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: var(--font-Space-Mono);
 }
-
 .themeButton{
-  background-color: transparent;
-  border: none;
   color: var(--color-text-light);
-  font-size: 30px;
-  margin-top: 20px;
-  font-weight: 300;
-  font-family: var(--font-Space-Mono);
+}
+.themeButtonDark{
+  color: var(--color-text-dark);
 }
 
-.themeButtonDark{
+.themeButton p, .themeButtonDark p{
   background-color: transparent;
-  border: none;
-  color: var(--color-text-dark);
-  font-size: 30px;
-  margin-top: 20px;
-  font-weight: 300;
-  font-family: var(--font-Space-Mono);
+  margin-right: 10px;
 }
+
 
 .text h2 {
   font-size: 50px;
@@ -54,6 +52,11 @@
   font-weight: 300;
   font-family: var(--font-Space-Mono);
   letter-spacing: 1px;
+}
+
+.icon{
+  height: 40px;
+  width: 40px;
 }
 
 .links {
@@ -111,6 +114,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .text h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .text p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  .themeButton, .themeButtonDark{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 200;
   }
 
   .links {
