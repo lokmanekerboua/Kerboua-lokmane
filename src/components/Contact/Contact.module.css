@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .container, .containerDark {
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -23,6 +23,7 @@
   align-items: center;
   border: none;
   font-size: 30px;
+  width: 100%;
   margin-top: 20px;
   font-weight: 300;
   font-family: var(--font-Space-Mono);
@@ -34,7 +35,7 @@
   color: var(--color-text-dark);
 }
 
-.themeButton p, .themeButtonDark p{
+.themeButton, .themeButtonDark p{
   background-color: transparent;
   margin-right: 10px;
 }
@@ -125,12 +126,15 @@
   .text p {
     font-size: 20px;
     font-weight: 200;
+    align-self: start;
+    text-align: start;
     letter-spacing: 1px;
   }
 
   .themeButton, .themeButtonDark{
     font-size: 20px;
     margin-top: 20px;
+    padding-left: 5px;
     font-weight: 200;
   }
 

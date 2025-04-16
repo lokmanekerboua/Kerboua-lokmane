@@ -1,7 +1,8 @@
-@import "../../vars.css";
+@import "../../../vars.css";
 
 .navbar {
   position: relative;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
