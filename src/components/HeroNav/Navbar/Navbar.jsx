@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import styles from "./Navbar.module.css";
 import {IoCloseSharp} from "react-icons/io5";
 import {HiOutlineMenu} from "react-icons/hi";
-import {useTheme} from "../../ThemeContext.jsx";
+import {useTheme} from "../../../ThemeContext.jsx";
 
 
 export const Navbar = () => {

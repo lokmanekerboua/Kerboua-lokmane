@@ -12,12 +12,12 @@ export const Cv = () => {
 
                 <div className={isDark?styles.btnContainerDark:styles.btnContainer}>
                     <a href={cvLinkEN} download="Your_CV_Name.pdf" target={"_blank"} className={isDark?styles.contactBtnDark:styles.contactBtn}>
-                        Download CV EN
+                        Download CV  (English)
                     </a>
                 </div>
                 <div className={isDark?styles.btnContainerDark:styles.btnContainer}>
                     <a href={cvLinkFR} download="Your_CV_Name.pdf" target={"_blank"} className={isDark?styles.contactBtnDark:styles.contactBtn}>
-                        Download CV FR
+                        Download CV  (Français)
                     </a>
                 </div>
 
