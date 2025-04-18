@@ -80,7 +80,7 @@
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: var(--current-font);
   font-weight: bold;
 }
@@ -153,6 +153,13 @@
     flex-direction: row;
     justify-content: center;
   }
+
+  .skill p {
+    font-size: 1rem;
+    font-family: var(--current-font);
+    font-weight: bold;
+  }
+
 
   .history {
     width: 100%;
