@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {motion} from "framer-motion";
-import {cn} from "./lib/utils.jsx";
+import {cn} from "../../utils/utils.jsx";
 
 export const Beams = React.memo(({className}) => {
     const paths = [
