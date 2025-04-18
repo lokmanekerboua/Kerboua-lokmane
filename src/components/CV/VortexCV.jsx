@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { createNoise3D } from "simplex-noise";
+import React, {useEffect, useRef} from "react";
+import {createNoise3D} from "simplex-noise";
 import {motion} from "framer-motion";
 import {cn} from "../../utils/utils.jsx";
 
-export const Vortex = (props) => {
+export const VortexCV = (props) => {
     const canvasRef = useRef(null);
     const containerRef = useRef(null);
     const particleCount = props.particleCount || 700;
@@ -174,13 +174,17 @@ export const Vortex = (props) => {
         canvas,
         ctx
     ) => {
-        const { innerWidth, innerHeight } = window;
+        const container = containerRef.current;
+        if (!container) return;
+        const {innerWidth, innerHeight} = window;
+        const width = container.clientWidth;
+        const height = container.clientHeight;
 
-        canvas.width = innerWidth;
-        canvas.height = innerHeight;
+        canvas.width = width;
+        canvas.height = height;
 
-        center[0] = 0.5 * canvas.width;
-        center[1] = 0.5 * canvas.height;
+        center[0] = 0.5 * width;
+        center[1] = 0.5 * height;
     };
 
     const renderGlow = (
@@ -210,25 +214,55 @@ export const Vortex = (props) => {
         ctx.restore();
     };
 
+    // useEffect(() => {
+    //     setup();
+    //     window.addEventListener("resize", () => {
+    //         const canvas = canvasRef.current;
+    //         const ctx = canvas?.getContext("2d");
+    //         if (canvas && ctx) {
+    //             resize(canvas, ctx);
+    //         }
+    //     });
+    // }, []);
+
     useEffect(() => {
         setup();
-        window.addEventListener("resize", () => {
+
+        const resizeObserver = new ResizeObserver(() => {
             const canvas = canvasRef.current;
             const ctx = canvas?.getContext("2d");
             if (canvas && ctx) {
                 resize(canvas, ctx);
             }
         });
+
+        if (containerRef.current) {
+            resizeObserver.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                resizeObserver.unobserve(containerRef.current);
+            }
+        };
     }, []);
 
     return (
         <div className={cn(props.containerClassName)}>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
                 ref={containerRef}
-                className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center">
-                <canvas ref={canvasRef}></canvas>
+                className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center"
+                style={{
+                    borderRadius: "100px",
+                    overflow: "hidden",
+                    position: "absolute",
+                    top: 0, left: 0, right: 0, bottom: 0
+                }}
+            >
+
+                <canvas ref={canvasRef} style={{ width: '100%', height: '100%'}}></canvas>
             </motion.div>
             <div className={cn("relative z-10", props.className)}>
                 {props.children}
