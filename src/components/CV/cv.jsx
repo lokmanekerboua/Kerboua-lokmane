@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Cv.module.css";
 import {useTheme} from "../../ThemeContext.jsx";
+import {Button} from "./mybutton.jsx";
 
 export const Cv = () => {
     const cvLinkEN = "https://drive.google.com/file/d/1uGBQu9IRsXPKGbL-HmQdJfSOB2Lgtp0_/view?usp=drive_link";
@@ -20,7 +21,6 @@ export const Cv = () => {
                         Download CV  (Français)
                     </a>
                 </div>
-
             </div>
         </section>
     );
