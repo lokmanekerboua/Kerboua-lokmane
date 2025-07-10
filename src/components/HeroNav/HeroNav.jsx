@@ -10,17 +10,9 @@ export const HeroNav = () => {
     const {isDark, toggleTheme} = useTheme();
     return (
         <section className={isDark ? styles.containerDark : styles.container}>
-            <Vortex
-                className={styles.vortex}
-                backgroundColor="transparent"
-                rangeY={800}
-                particleCount={300}
-                baseHue={230}
-            >
                 <Navbar/>
                 <Hero/>
-            </Vortex>
-            {/*<Beams className={styles.beams}/>*/}
+            <Beams className={styles.beams}/>
         </section>
     );
 };
