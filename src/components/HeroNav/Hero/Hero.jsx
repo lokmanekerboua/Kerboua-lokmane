@@ -15,10 +15,6 @@ export const Hero = () => {
                     I'm a Network Engineer and an Android Developer with 3 years of experience using Kotlin and
                     Jetpack Compose. Reach out if you'd like to learn more!
                 </p>
-                <a href="mailto:lokmankerboua@gmail.com"
-                   className={isDark ? styles.contactBtnDark : styles.contactBtn}>
-                    Contact Me
-                </a>
             </div>
             <img
                 src={getImageUrl("hero/lok.svg")}
