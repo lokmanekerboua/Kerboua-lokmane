@@ -5,41 +5,23 @@ import {VortexCV} from "./VortexCV.jsx";
 
 export const Cv = () => {
     const cvLinkEN = "https://drive.google.com/file/d/1uGBQu9IRsXPKGbL-HmQdJfSOB2Lgtp0_/view?usp=drive_link";
-    const cvLinkFR = "https://drive.google.com/file/d/1iydZQhWyUufzitSVUfHZHtaF8TjWGmCp/view?usp=drive_link";
+    const cvLinkFR = "https://drive.google.com/file/d/1XD1PSEyXn7phjk-tmjRIMSZXgPpJTjqq/view?usp=drive_link";
     const {isDark, toggleTheme} = useTheme();
     return (
         <section className={styles.container}>
             <div className={styles.content}>
 
                 <div className={isDark ? styles.btnContainerDark : styles.btnContainer}>
-                    <VortexCV
-                        containerClassName={styles.vortexContainer}
-                        className={styles.vortexContent}
-                        backgroundColor="transparent"
-                        rangeY={50}
-                        particleCount={50}
-                        baseHue={230}
-                    >
                         <a href={cvLinkEN} download="Your_CV_Name.pdf" target={"_blank"}
                            className={isDark ? styles.contactBtnDark : styles.contactBtn}>
                             Download CV (English)
                         </a>
-                    </VortexCV>
                 </div>
                 <div className={isDark ? styles.btnContainerDark : styles.btnContainer}>
-                    <VortexCV
-                        containerClassName={styles.vortexContainer}
-                        className={styles.vortexContent}
-                        backgroundColor="transparent"
-                        rangeY={50}
-                        particleCount={50}
-                        baseHue={230}
-                    >
                         <a href={cvLinkFR} download="Your_CV_Name.pdf" target={"_blank"}
                            className={isDark ? styles.contactBtnDark : styles.contactBtn}>
                             Download CV (Français)
                         </a>
-                    </VortexCV>
                 </div>
             </div>
         </section>
