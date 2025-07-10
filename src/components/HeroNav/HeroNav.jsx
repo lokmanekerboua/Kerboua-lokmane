@@ -12,7 +12,6 @@ export const HeroNav = () => {
         <section className={isDark ? styles.containerDark : styles.container}>
                 <Navbar/>
                 <Hero/>
-            <Beams className={styles.beams}/>
         </section>
     );
 };
