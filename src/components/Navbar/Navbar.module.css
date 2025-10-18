@@ -1,4 +1,4 @@
-@import "../../../vars.css";
+@import "../../vars.css";
 
 .navbar {
   position: relative;
@@ -55,6 +55,54 @@
   font-family: var(--current-font);
   text-decoration: none;
 }
+
+/* Language Select - Light Mode */
+.languageSelect {
+    font-size: 25px;
+    color: var(--color-text-light);
+    font-family: var(--current-font);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px 0 0; /* Add padding on right for arrow */
+    outline: none;
+}
+
+.languageSelect option {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    font-family: var(--current-font);
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Language Select - Dark Mode */
+.languageSelectDark {
+    font-size: 25px;
+    color: var(--color-text-dark);
+    font-family: var(--current-font);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px 0 0; /* Add padding on right for arrow */
+    outline: none;
+}
+
+.languageSelectDark option {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+    font-family: var(--current-font);
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Hover effects to match links */
+.languageSelect:hover,
+.languageSelectDark:hover {
+    opacity: 0.8;
+}
+
+
 
 
 @media screen and (min-width: 851px) {

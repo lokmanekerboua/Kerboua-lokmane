@@ -4,6 +4,7 @@ import styles from "./ProjectCard.module.css";
 import {getImageUrl} from "../../utils";
 import {useTheme} from "../../ThemeContext.jsx";
 
+
 export const ProjectCard = ({project: {title, imageSrc, description, skills, demo, source},}) => {
     const {isDark, toggleTheme} = useTheme();
     return (

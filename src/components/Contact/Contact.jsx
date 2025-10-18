@@ -6,19 +6,27 @@ import {TbBrandLinkedin} from "react-icons/tb";
 import {FaFacebookSquare, FaGithub, FaStackOverflow} from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 import {useTheme} from "../../ThemeContext.jsx";
-import {MdLightMode, MdNightlight} from "react-icons/md";
-
+import {MdLightMode, MdNightlight, MdDarkMode} from "react-icons/md";
+import {useLanguage} from "../../LanguageContext.jsx";
 
 export const Contact = () => {
     const {isDark, toggleTheme} = useTheme();
+    const {language} = useLanguage();
+    const contactText = language === "en" ? "Contact" : "Contact";
+    const reachOutText = language === "en" ? "Feel free to reach out!" : "N'hésitez pas à me contacter !";
+    const themeText = language === "en" ? "Theme" : "Thème";
     return (
         <footer id="contact" className={isDark ? styles.containerDark : styles.container}>
             <div className={styles.text}>
-                <h2>Contact</h2>
-                <p>Feel free to reach out!</p>
+                <h2>{contactText}</h2>
+                <p>{reachOutText}</p>
                 <button className={isDark ? styles.themeButtonDark : styles.themeButton} onClick={toggleTheme}>
-                    <p>Theme</p>
-                    {isDark ? <MdNightlight className={styles.icon}/> : <MdLightMode className={styles.icon}/>}
+                    <div className={styles.themeTextStyle}>
+                        <p>{themeText}</p>
+                    </div>
+                    <div className={styles.iconContainer}>
+                        {isDark ? <MdDarkMode className={styles.icon}/> : <MdLightMode className={styles.icon}/>}
+                    </div>
                 </button>
             </div>
             <ul className={styles.links}>

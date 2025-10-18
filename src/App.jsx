@@ -1,8 +1,9 @@
 import styles from "./App.module.css";
 import {About} from "./components/About/About";
 import {Contact} from "./components/Contact/Contact";
-import {Experience} from "./components/Experience/Experience";
-import {HeroNav} from "./components/HeroNav/HeroNav.jsx";
+import {Skills} from "./components/Skills/Skills.jsx";
+import {Description} from "./components/Description/Decription.jsx";
+import {Navbar} from "./components/Navbar/Navbar.jsx";
 import {Projects} from "./components/Projects/Projects";
 import {Cv} from "./components/CV/cv";
 import {useTheme} from "./ThemeContext.jsx";
@@ -14,9 +15,10 @@ function App() {
     const {isDark, toggleTheme} = useTheme();
     return (
         <div className={isDark ? styles.AppDark : styles.AppLight}>
-            <HeroNav/>
+            <Navbar/>
+            <Description/>
             <About/>
-            <Experience/>
+            <Skills/>
             <Projects/>
             <Cv/>
             <Contact/>
